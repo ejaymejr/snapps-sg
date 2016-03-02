@@ -1,0 +1,261 @@
+
+#calendar-year-bar {
+	margin-bottom:10px;
+	padding:5px;
+	padding-left:10px;
+	font-size:12px;
+	border:0;
+	border-bottom:1px solid #DEDEDE;
+	text-align:left;
+}
+
+div.weekbar {
+    clear: both;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    border: 0px;
+    background-color:#f4f6fb;
+    height:25px;
+}
+div.weekbar ul {
+    margin-left: 10px;
+    padding-left: 0;
+    display: inline;
+}
+
+div.weekbar ul li {
+    list-style: none;
+    display: inline;
+    padding:5px 5px 5px 5px;
+    float:left;
+    margin-left:1px;
+    width:20px;
+    background-color:#cad5ee;
+}
+div.weekbar li:hover {
+    background-color:#5783A6;
+}
+
+div.weekbar ul li.first {
+    margin-left: 0;
+    border-left: none;
+    list-style: none;
+    display: inline;
+}
+div.weekbar li.current {
+    background-color:#5783A6;
+    color:#fff;
+}
+
+div.weekbar li a {
+    color: #000099;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+
+div.weekbar li a:hover {
+    text-decoration:none;
+    color:#6699FF;
+}
+div.weekbar li.current a {
+    color:#fff;
+}
+
+
+
+div.monthbar {
+    clear: both;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    border: 0px;
+    background-color:#f4f6fb;
+    height:25px;
+}
+div.monthbar ul {
+	margin:auto;
+    display: inline;
+}
+
+div.monthbar ul li {
+    list-style: none;
+    display: inline;
+    padding:5px 10px 5px 10px;
+    float:left;
+    margin-left:1px;
+    background-color:#cad5ee;
+}
+div.monthbar li:hover {
+    background-color:#5783A6;
+}
+
+div.monthbar ul li.first {
+    margin-left: 0;
+    border-left: none;
+    list-style: none;
+    display: inline;
+}
+div.monthbar li.current {
+    background-color:#5783A6;
+    color:#fff;
+}
+
+div.monthbar li a {
+    color: #000099;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+
+div.monthbar li a:hover {
+    text-decoration:none;
+    color:#6699FF;
+}
+div.monthbar li.current a {
+    color:#fff;
+}
+
+
+
+
+div.quarterbar {
+    clear: both;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    border: 0px;
+    background-color:#f4f6fb;
+    height:25px;
+}
+div.quarterbar ul {
+    margin:auto;
+    display: inline;
+}
+
+div.quarterbar ul li {
+    list-style: none;
+    display: inline;
+    padding:5px 10px 5px 10px;
+    float:left;
+    margin-left:1px;
+    background-color:#cad5ee;
+}
+div.quarterbar li:hover {
+    background-color:#5783A6;
+}
+
+div.quarterbar ul li.first {
+    margin-left: 0;
+    border-left: none;
+    list-style: none;
+    display: inline;
+}
+div.quarterbar li.current {
+    background-color:#5783A6;
+    color:#fff;
+}
+
+div.quarterbar li a {
+    color: #000099;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+
+div.quarterbar li a:hover {
+    text-decoration:none;
+    color:#6699FF;
+}
+div.quarterbar li.current a {
+    color:#fff;
+}
+
+
+
+
+h2.cal-month-name {
+    margin:0;
+    text-align:center;
+    font-size:12px;
+}
+
+table.fiscal-month {
+    margin:10px;
+    border:1px solid #CDCDCD;
+}
+
+table.fiscal-month td {
+    padding:6px;
+    margin:0;
+    color:#999999;
+    text-align:center;
+    border:1px solid #DEDEDE;
+}
+table.fiscal-month tr.fiscal-month-header td {   
+	background-position:left -15px;
+	text-align:center;
+	
+	color:#000066;
+	border:0;
+	
+}
+table.fiscal-month td.week-sn {
+	background-color:#EFEFEF;
+	text-align:center;
+	
+	color:#000000;
+	border:0;
+}
+table.fiscal-month td.week-sn a {	
+	color:#000066;
+	font-weight:bold;
+}
+
+
+
+.marked-day {
+	background-color:#6699FF;
+	color:#000033;
+}
+.marked-day a {
+	color:#FFFFFF;
+}
+
+td.calendar-cell-hoverable:hover {
+	background-image:none;
+	background-color:#000066;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+td.calendar-cell-hoverable:hover a {
+	color:#FFFFFF;
+}
+
+table.fiscal-month td.calendar-cell-hoverable:hover {
+	background-image:none;
+}
+
+table.fiscal-month td.chart-icon-cell {
+	margin:0;
+	padding:0;
+	background:none;
+	background-color:#FFFFFF;
+    border:1px solid #DEDEDE;
+}
+
+
+
+.alignLeft {
+    text-align:left;
+}
+.alignRight {
+    text-align:right;
+}

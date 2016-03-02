@@ -1,0 +1,117 @@
+
+
+.dataGridContainer {
+    padding:0px;
+	border: 1px solid #CCCCCC;
+
+	text-align:center;
+	vertical-align:top;
+}
+
+.dataGridContainer * {
+    font-size:10px;
+}
+
+.dataGridHeader {
+    padding:10px;
+    background-color:#CCCCCC;
+    font-weight: normal;
+    text-align: left;
+    
+    background-image: url(../images/simple-gradient-bg.png);
+    background-position:left -50px;
+    background-repeat:repeat-x;
+    
+
+}
+.dataGridContent {
+    padding:0px;
+    text-align: left;
+}
+.dataGridContent table td {
+    padding:4px;
+}
+
+.dataGridFooter {
+    padding:10px;
+    background-color:#FFFFFF;
+    text-align: left;
+    
+    background-image: url(../images/simple-gradient-bg.png);
+    background-position:left -50px;
+    background-repeat:repeat-x;
+    
+}
+.dataGridNavigation {
+    padding:5px;
+    background-color:#EFEFEF;
+    text-align: center;
+    
+    background-image: url(../images/simple-gradient-bg-2.png);
+    background-position:left -50px;
+    background-repeat:repeat-x;
+}
+
+.dataGridTable {
+	text-align:center;
+}
+.dataGridTableHeader {
+    font-weight:bold;
+    background-color:#CCCCCC;
+
+    
+    
+    background-image: url(../images/simple-gradient-bg.png);
+    background-position:left -30px;
+    background-repeat:repeat-x;
+}
+
+.dataGridTableHeaderColumn {
+
+}
+.dataGridTableHeaderCurrentSorting {
+	color:#009900;
+}
+.dataGridRowOdd {
+
+}
+.dataGridRowEven {
+    background-color:#EFEFEF;
+}
+.dataGridRowOdd2 {
+
+}
+.dataGridRowEven2 {
+}
+
+
+
+.clicked {
+	background-color:#ECE9B5;
+}
+.unclicked {
+
+}
+.selected {
+	background-color:#ECF9B5;
+}
+
+.hover {
+	background-color:#ECE905;
+	/* cursor:pointer; */
+}
+.unhover {
+
+}
+
+tr.negative td input {
+    background-color:#999999;
+}
+
+.dataGridContainer  ul.packed-list {
+    list-style-type:disc;
+    list-style-position:inside;
+}
+.dataGridContainer  ul.packed-list li {
+    margin-left:4px;
+}

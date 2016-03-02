@@ -1,0 +1,66 @@
+
+#cpanelmenuContainer {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    background-color:#FFF;
+}
+
+#cpanelmenuContainer td {
+    text-align: left;
+    vertical-align: top;
+}
+
+#cpanelmenuContainer * {
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#cpanelmenuContainer h2 {
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: left;
+    border: 1px solid #e9edf8;
+    background-color: #cad5ee;
+    background-image: url(../images/bg/headline-bar-bg-25.jpg);
+    padding: 5px;
+    padding-left:25px;
+    color:#FFF;
+}
+
+#cpanelmenuContainer ul.cpanelmenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-position: outside;
+    text-align: left;
+}
+
+#cpanelmenuContainer ul li {
+    list-style: none;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid #e9edf8;
+}
+
+#cpanelmenuContainer ul li:hover {
+    background-color: #e2e8f6;
+}
+
+#cpanelmenuContainer ul li a {
+    padding-left: 2px;
+    color: #217DEF;
+    text-decoration: none;
+    background-image: url(../images/icon_bullet.gif);
+    background-repeat: no-repeat;
+    padding: 3px 0px 3px 20px;
+}
+
+#cpanelmenuContainer ul li a:hover {
+    color: #000033;
+    background-position: 0px -80px;
+}

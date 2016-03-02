@@ -1,0 +1,39 @@
+.survey-criteria {font-size: 14px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;}
+	
+.radioButtonText {font-size: 12px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;}
+		
+.tk-bgimgmon { background-image: url('../images/hr/monthBg.gif'); }
+.tk-bgimgday { background-image: url('../images/hr/dayBg.gif'); }
+.tk-bgimgtmp { background-image: url('../images/hr/monthBg1.gif'); }
+.hr-inprocess{ background-image: url('../images/icons/ajax-loader.gif'); }
+.stripebg    { background-image: url(../images/conveyor/conveyorbg.gif); }
+.gridButton  { background-image: url(../images/hr/monthBg.gif); }
+	
+	
+.tk-menu { background-image: url('../images/bg/menu.png'); }
+.tk-blue {background-color: #A4CAE6;}
+.tk-pink {background-color: #F2BFBF;}
+.tk-gree {background-color: #CCFF00;}
+.tk-yell {background-color: #FBF484;}
+.tk-oran {background-color: #FFC18A;}
+.tk-lgra {background-color: #EEEEEE;}
+.tk-dgra {background-color: #D0D0D0;}
+
+.tk-red {color: #FF0000;}
+.tk-grn {color: #339900;}
+.tk-dred {color: #CC0000;}
+.tk-brwn {color: #663333;}
+
+.rcorners {
+    border-radius: 5px;
+    border: 1px solid #F9DAA3;
+    padding: 5px;
+    width: 300px;
+    height: 250px;
+}

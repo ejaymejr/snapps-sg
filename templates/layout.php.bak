@@ -1,0 +1,94 @@
+<?php use_helper('Javascript'); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<?php include_http_metas() ?>
+<?php include_metas() ?>
+
+<?php include_title() ?>
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+</head>
+
+
+<body class=" yui-skin-sam">
+
+<?php echo javascript_tag("YAHOO.namespace('example.container');"); ?>
+<div id="userinfo-box">
+	<h1><?php echo '&nbsp; IP ADDRESS: ' . ($_SERVER['HTTP_X_FORWARDED_FOR']) ?></h1>
+    <?php if ($sf_user->isAuthenticated()): ?>
+    <?php echo $sf_user->getUsername() ?> |
+    <?php echo link_to('My Account', sfConfig::get('http_intranet') . 'my') ?> |
+    <?php echo link_to('Sign Out', 'logout') ?> |
+    <?php echo link_to('Employee Feedback / Support Request', 'http://app.micronclean/sym/support/') ?>
+    <?php else: ?>
+    <?php echo link_to('Sign In', 'login') ?>
+    <?php endif ?> |
+    <a id="IDlinkQuickHelp" href="javascript:;" onclick="showQuickHelp();">Quick Help</a>
+</div>
+
+<div id="topBanner">
+    <?php
+    $logoOnClick = "";
+    if (SF_APP != 'dashboard') {
+        $logoOnClick = 'onclick="showGlobalDashboard();return false;"';
+    }
+    ?>
+    <a id="IDlinkGlobalDashboard" 
+        href="<?php echo sfConfig::get('http_intranet'); ?>" <?php echo $logoOnClick ?>
+        ><?php echo image_tag('micronclean', 'id="logo1"'); ?></a>
+    <div id="modHead"><?php echo sfConfig::get('app_apps_name', 'General'); ?></div>   
+</div>
+
+<div id="menu">
+<?php if (SF_APP == 'sgiv') { include_partial('global/sgiv_shortcuts'); } ?>
+<?php if (SF_APP == 'purchasing') { include_partial('global/purchasing_shortcuts'); } ?>
+<?php if (SF_APP == 'finance') { include_partial('global/finance_shortcuts'); } ?>
+<?php include_partial('global/menu'); ?></div>
+<div id="submenu"><?php include_partial('global/submenu'); ?></div>
+<?php include_partial('global/subsubmenu'); ?>
+<div id="pageTitle">
+<?php include_partial('global/page_heading_select'); ?>
+<?php echo sfConfig::get('app_page_heading'); ?>
+<?php include_partial('global/page_heading_changedate'); ?>
+</div>
+<?php include_partial('global/message', array('sf_request' => $sf_request)); ?>
+<div id="main"><?php echo $sf_data->getRaw('sf_content') ?></div>
+
+
+<div id="footerPageTitle">&nbsp;</div>
+<div id="footerSubMenu">&nbsp;</div>
+<div id="footerMenu">&nbsp;</div>
+
+
+<div style="clear:both; text-align:left; margin-top:10px;padding-left:20px;">
+Quick Links: 
+<?php echo link_to('Document Master List', sfConfig::get('http_intranet') . 'sym/isodoc/dmi' ); ?> |
+<?php echo link_to('Working Instructions', sfConfig::get('http_intranet') . 'sym/isodoc/wi/Micronclean'); ?> |
+<?php echo link_to('Quality Manual and Procedures', sfConfig::get('http_intranet') . 'sym/isodoc/qmqp'); ?>
+</div>
+
+<?php include_partial('global/quality_policy'); ?>
+
+<div id="footer">
+    Total programmers harmed in the process of producing this page: <?php echo rand(1, 9); ?>
+    <br />
+    (certified by FBMI; federal bureau of misleading information)
+    <br />
+    <br />
+    NB: Actual and official content of this footer is in progress.
+</div>
+
+
+<?php
+include_partial('global/help');
+if (SF_APP != 'dashboard') { include_partial('global/dashboard_menu'); }
+if (SF_APP != 'user') { echo javascript_tag("formatFormStyle();"); }
+include_partial('global/yui_auxiliary_panels'); 
+?>
+
+</body>
+</html>
+

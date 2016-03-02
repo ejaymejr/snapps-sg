@@ -1,0 +1,181 @@
+.convTitleBG { background-image: url('../images/hr/monthBg1.gif'); }
+.conveyorbg  { 
+	background-image: url(../images/conveyor/conveyorbg.gif);
+	 
+	}
+.floatDataGrid {
+	float: left;
+}
+
+.conveyorList{
+	float: left;
+	height: auto;
+	width: auto;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.DivSeparator{
+	float: left;
+	width: 50;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	background-color: #FF0000;
+}
+
+.conveyorAddBox {
+	float: left;
+	height: auto;
+	width: auto;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #0066FF;
+	border-right-color: #0066FF;
+	border-bottom-color: #0066FF;
+	border-left-color: #0066FF;
+	position: absolute;
+	left: 500px;
+	top: 200px;
+	background-color: #000000;
+}
+
+.DIVBox {
+	float: left;
+	height: auto;
+	width: auto;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #0000FF;
+	border-right-color: #0000FF;
+	border-bottom-color: #0000FF;
+	border-left-color: #0000FF;
+	left: 0px;
+	top: 0px;
+	background-color: #ffffff;
+}
+
+.DIVBox1 {
+	position:absolute;
+	height: auto;
+	width: 600;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #0000FF;
+	border-right-color: #0000FF;
+	border-bottom-color: #0000FF;
+	border-left-color: #0000FF;
+	left: 800px;
+	top: 60px;
+	background-color: #ffffff;
+}
+
+.DIVBox2 {
+	position:absolute;
+	height: auto;
+	width: auto;
+	left: 500px;
+	top: 60px;
+}
+
+.DIVBoxNoLine {
+	float: left;
+	height: auto;
+	width: auto;
+	left: 0px;
+	top: 0px;
+}
+
+.convFont {font-family: Arial, Helvetica, sans-serif}
+.convFont10 {color: #FF0000; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.convFontBold {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.convBlueBG {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0000FF;
+	font-weight: bold;
+}
+.convFont12 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.convFont14 {font-size: 14px;}
+.cFBold18 {font-size: 18px; font-weight: bold; color: #B1592C; font-family: Helvetica;}
+.convFont16 {font-size: 16px;}
+.convFont18 {font-size: 18px;}
+.fontBlack{ color: #000000;}
+.fontBlue { color: #0000ff;}
+.fontRed  { color: #ff0000;}
+.fontWhite{ color: #ffffff;}
+.fontLblue{ color: #C1D5F0;}
+.fontYellow{ color: #F9F965;}
+.bgTitle  {background-color: #cccccc;}
+.bgEvenRow  {background-color: #F4F6FB;}
+.bgOddRow   {background-color: #E2E8F6;}
+.bgCell     {background-color: #F9D86C;}
+.bgRemark   {background-color: #147A0B;}
+
+/* Tooltip */
+
+#tooltip {
+	position:absolute;
+	z-index:9999;
+	color:#fff;
+	font-size:10px;
+	width:180px;
+	
+}
+
+#tooltip .tipHeader {
+	height:8px;
+	background:url('../images/conveyor/tipHeader.gif') no-repeat;
+}
+
+
+#tooltip .tipBody {
+	background-color:#000;
+	padding:5px 5px 5px 15px;
+}
+
+#tooltip .tipFooter {
+	height:8px;
+	background:url('../images/conveyor/tipFooter.gif') no-repeat;
+}    
+
+#DIVVerifyRemark {
+	position:relative;
+	height: auto;
+	width: 400;
+	left: 120px;
+	top: -20px;
+	background-color: #ffffff;
+	float: left;
+}
+
+.DIVInstruction {
+	position: fixed;
+	top: 150px;
+	margin: 0px;
+	border: 2px solid #fff;
+	color: #000;
+	width: 300px;
+	float: right;
+	background-color: #DBDFD9;
+	right: 50px;
+	box-shadow: 2px 2px 5px 2px #EAEAEA;
+	white-space: pre-wrap;      /* CSS3 */       
+	white-space: -moz-pre-wrap; /* Firefox */        
+	white-space: -pre-wrap;     /* Opera <7 */       
+	white-space: -o-pre-wrap;   /* Opera 7 */        
+	word-wrap: break-word; 
+	padding: 10px;
+	/*-moz-box-shadow: 3px 3px 4px #DA6015;
+	-webkit-box-shadow: 3px 3px 4px #DA6015;
+	box-shadow: 3px 3px 4px #2D6EAE; */
+}

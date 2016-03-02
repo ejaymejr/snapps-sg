@@ -1,0 +1,89 @@
+.tabMobules{font-size: 14pt;
+			face: Arial;
+			color: #FFFBF0;
+			}
+
+.subModules{font-size: 10pt;
+			font_family: Arial;
+			color:#000000;
+			}
+
+.sideTitle{font-size: 12pt;
+			font_family: Arial;
+			color:#000000;
+			}
+			
+.mainTitle{ color:#000099;
+			font-size:16px;
+			face="Arial";
+			font-weight:bolder;
+			}
+
+.dataEntryRow{	
+			}
+.record {	Color: #000099;
+			font-size: 11pt;
+			font-family:Arial;
+		}
+			
+.deleteWearerWithSelected{ font-size: 8pt;
+							font-family:Arial;
+							color:#FF0000;
+						 }
+.dataEntryInputElement{	
+						}
+						
+.actionButton { background-color: transparent;
+				height: 19px;
+				width: 80px;
+				border-top:none; 
+				border-left:none; 
+				border-bottom: 1px solid black; 
+				border-right: 1px solid black;
+				font-size: 8pt;
+				font-weight: bold;
+				}
+
+.message{ 
+			font-size: `1pt;
+			color: #FF0000;
+			font-weight:bold
+		}
+		
+.errorMessage{	font-family: Arial;
+				font-size: 10pt;
+				color: #336699;
+			}
+
+.resultTable{ 	border-bottom: 1px solid #DBEAF5;
+				font-size: 10pt;
+				font_family: Arial;
+				color: #000099;
+				}
+
+.resultTableButton	{background-color: transparent;
+					height: 12px;
+					width: 80px;
+					border-top:none; 
+					border-left:none; 
+					border-bottom: none; 
+					border-right: none;
+					font-size: 8pt;
+					font-family: Arial;
+					font-weight: normal;
+					color: #000099;
+					}
+.resultTableLink{ 	border-bottom: 1px solid #DBEAF5;
+				font-size: 8pt;
+				font_family: Arial;
+				color: #000099;
+				}
+
+.giLabel {
+    color:#999999;
+}
+.giValue {
+    color:#0000FF;
+    font-weight:bold;
+    font-size:16px;
+}

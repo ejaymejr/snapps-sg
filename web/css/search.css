@@ -1,0 +1,64 @@
+
+.search-form  {
+    background-color:#ddd;
+    margin:auto;
+    width:100%;
+    border:1px solid #CDCDCD;
+    padding:10px;
+    clear:both;
+    /*
+    background-image: url(../images/simple-gradient-bg-2.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    */
+}
+
+.search-form h4 {
+    padding:4px;
+    background-color:#4292c6;
+    font-weight:bold;
+    color:#FFFFFF;
+    margin:0;
+    font-size:10px;
+}
+
+.search-form h4 img {
+    float:right;
+    margin-left:10px;
+
+}
+.search-form select {
+    padding:4px;
+    margin:0;
+    margin-bottom:2px;
+    margin-top:2px;
+}
+.search-form td {
+    text-align:right;
+    vertical-align:top;
+    padding:4px;
+}
+.search-form ul {
+}
+.search-form ul li {
+    margin-bottom:6px;
+}
+.search-form .form-header {
+    padding:4px;
+    background-color:#4292c6;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+.search-form .submit-row {
+    text-align:center;
+    vertical-align:bottom;
+    padding:2px;
+}
+
+.search-form .big-submit {
+    width:100px;
+    height:50px;
+    font-size:14px;
+    font-weight:bold;
+}
+

@@ -1,0 +1,1171 @@
+---
+garment: 
+  _attributes: 
+    package: lib.model.particle
+  access_attr: 
+    access: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  air_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    X: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    filter_area: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    temperature: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    rh: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    remarks: 
+      type: LONGVARCHAR
+      required: true
+    tester: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  customer_attr: 
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  department_attr: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    department: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  driver_attr: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    name: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  ftir_spec_attr: 
+    spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  ic_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    sample: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    department: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    type: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    na: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    na_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    nh: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    nh_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    k: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    k_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    ca: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    ca_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    mg: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    mg_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    f: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    f_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    cl: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    cl_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    no: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    no_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    po: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    po_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    so: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    so_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    washer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+      required: true
+    tester: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    garment_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  in_out_dryer: 
+    dryer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    date_time: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer_machine: 
+      type: CHAR
+      size: 2
+      required: true
+      default: 
+    loader: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    verify: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remark: 
+      type: LONGVARCHAR
+      required: true
+  in_out_dryer_washer_log: 
+    dryer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    washer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    pocket: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  in_out_incoming: 
+    _attributes: 
+      idMethod: native
+    incoming_batch: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    department: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    driver: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    recipient: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+      required: true
+    complete_washing: 
+      type: VARCHAR
+      size: 4
+      required: true
+      default: 
+    complete_outgo: 
+      type: VARCHAR
+      size: 5
+      required: true
+      default: 
+  in_out_incoming_washer: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    washer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    incoming_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    washer_machine: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    wash_program: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    pocket: 
+      type: VARCHAR
+      size: 20
+      required: true
+      default: 
+    department: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    shift: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    type: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    loader: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    verify: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remark: 
+      type: LONGVARCHAR
+      required: true
+    complete_drying: 
+      type: VARCHAR
+      size: 5
+      required: true
+      default: 
+    individual_remark: 
+      type: LONGVARCHAR
+      required: true
+    purge_program: 
+      type: VARCHAR
+      size: 100
+      required: true
+      default: NIL
+    _indexes: 
+      idx_batch_dry: 
+        - incoming_batch
+        - complete_drying
+  in_out_outgoing: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    incoming_batch: 
+      type: INTEGER
+      required: true
+      default: 0
+    sender: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    driver: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    checked_by: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+      required: true
+  in_out_washer: 
+    washer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    date_time: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    wash_program: 
+      type: CHAR
+      size: 2
+      required: true
+      default: 
+    washer_machine: 
+      type: CHAR
+      size: 2
+      required: true
+      default: 
+    loader: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    verify: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remark: 
+      type: LONGVARCHAR
+      required: true
+  in_out_washer_dryer: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dryer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    washer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    washer_index: 
+      type: INTEGER
+      required: true
+      default: 0
+    incoming_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer_machine: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    loader: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    verify: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remark: 
+      type: LONGVARCHAR
+      required: true
+  in_out_washer_incoming_log_backup: 
+    washer_batch: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    incoming_batch: 
+      type: INTEGER
+      required: true
+      default: 0
+    department: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    type: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    pocket: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    complete_drying: 
+      type: CHAR
+      size: 3
+      required: true
+      default: 
+  locations_attr: 
+    location: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  locations_remark_attr: 
+    company: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  nvr_ftir_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    department: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    type: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    left_sleeve: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    left_sleeve_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    right_sleeve: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    right_sleeve_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    silicone: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    silicone_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    amide: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    amide_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dop: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dop_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    washer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+      required: true
+    tester: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    garment_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  ohm_attr: 
+    ohm: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  out_of_control: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: DATE
+      required: true
+      default: 0000-00-00
+    observation: 
+      type: LONGVARCHAR
+      required: true
+    investigate_by: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    action: 
+      type: LONGVARCHAR
+      required: true
+    review_by: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    user_id: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  particle_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+    department: 
+      type: VARCHAR
+      size: 50
+    type: 
+      type: VARCHAR
+      size: 50
+    point_3: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      default: 0.000
+    point_3_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    point_5: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      default: 0.000
+    point_5_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    no_of_times_wash: 
+      type: INTEGER
+      required: true
+      default: 0
+    washer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+    tester: 
+      type: VARCHAR
+      size: 50
+    garment_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  particle_data_audit: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+    department: 
+      type: VARCHAR
+      size: 50
+    type: 
+      type: VARCHAR
+      size: 50
+    point_3: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      default: 0.000
+    point_3_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    point_5: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      default: 0.000
+    point_5_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    no_of_times_wash: 
+      type: INTEGER
+      required: true
+      default: 0
+    washer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+    tester: 
+      type: VARCHAR
+      size: 50
+    garment_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  report_log: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    data_date: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    attention: 
+      type: VARCHAR
+      size: 100
+      required: true
+      default: 
+    by: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  shift_attr: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    shift: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  spec_and_trigger: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    customer: 
+      type: VARCHAR
+      size: 100
+      required: true
+      default: 
+    garment_type: 
+      type: VARCHAR
+      size: 100
+      required: true
+      default: 
+    type: 
+      type: VARCHAR
+      size: 100
+      required: true
+      default: 
+    spec: 
+      type: VARCHAR
+      size: 10
+      required: true
+      default: 
+    trigger: 
+      type: VARCHAR
+      size: 10
+      required: true
+      default: 
+  surface_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+    department: 
+      type: VARCHAR
+      size: 50
+    type: 
+      type: VARCHAR
+      size: 50
+    sleeve_x1: 
+      type: VARCHAR
+      size: 50
+    sleeve_x1_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    sleeve_x2: 
+      type: VARCHAR
+      size: 50
+    sleeve_x2_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    shoe_right: 
+      type: VARCHAR
+      size: 50
+    shoe_right_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    shoe_left: 
+      type: VARCHAR
+      size: 50
+    shoe_left_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    washer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+    tester: 
+      type: VARCHAR
+      size: 50
+    garment_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  type_attr: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    type: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  user: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    number: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    name: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    password: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    access_level: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    customer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    email: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+  veritas_particle_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    customer: 
+      type: VARCHAR
+      size: 50
+    department: 
+      type: VARCHAR
+      size: 50
+    type: 
+      type: VARCHAR
+      size: 50
+    point_3: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      default: 0.000
+    point_3_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    point_5: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      default: 0.000
+    point_5_spec: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    no_of_times_wash: 
+      type: INTEGER
+      required: true
+      default: 0
+    washer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    dryer: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+    tester: 
+      type: VARCHAR
+      size: 50
+  water_data: 
+    _attributes: 
+      idMethod: native
+    index_no: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_time: 
+      type: TIMESTAMP
+      required: true
+      
+    resistivity: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000
+    tester: 
+      type: VARCHAR
+      size: 50
+      required: true
+      default: 
+    remarks: 
+      type: LONGVARCHAR
+      required: true
+    LCL: 
+      type: DECIMAL
+      size: 10
+      scale: 3
+      required: true
+      default: 0.000

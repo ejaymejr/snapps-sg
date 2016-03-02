@@ -1,0 +1,56 @@
+<?php
+
+
+
+class IcCalibrationFileMapBuilder {
+
+	
+	const CLASS_NAME = 'lib.model.particle.map.IcCalibrationFileMapBuilder';
+
+	
+	private $dbMap;
+
+	
+	public function isBuilt()
+	{
+		return ($this->dbMap !== null);
+	}
+
+	
+	public function getDatabaseMap()
+	{
+		return $this->dbMap;
+	}
+
+	
+	public function doBuild()
+	{
+		$this->dbMap = Propel::getDatabaseMap('particle');
+
+		$tMap = $this->dbMap->addTable('ic_calibration_file');
+		$tMap->setPhpName('IcCalibrationFile');
+
+		$tMap->setUseIdGenerator(true);
+
+		$tMap->addPrimaryKey('ID', 'Id', 'string', CreoleTypes::BIGINT, true, null);
+
+		$tMap->addColumn('IC_CALIBRATION_ID', 'IcCalibrationId', 'string', CreoleTypes::BIGINT, true, null);
+
+		$tMap->addColumn('DESCRIPTION', 'Description', 'string', CreoleTypes::VARCHAR, false, 255);
+
+		$tMap->addColumn('TRANS_DATE', 'TransDate', 'int', CreoleTypes::DATE, false, null);
+
+		$tMap->addColumn('FILENAME', 'Filename', 'string', CreoleTypes::VARCHAR, false, 255);
+
+		$tMap->addColumn('PROOF_NUMBER', 'ProofNumber', 'string', CreoleTypes::VARCHAR, true, 50);
+
+		$tMap->addColumn('CREATED_BY', 'CreatedBy', 'string', CreoleTypes::VARCHAR, false, 45);
+
+		$tMap->addColumn('DATE_CREATED', 'DateCreated', 'int', CreoleTypes::TIMESTAMP, false, null);
+
+		$tMap->addColumn('MODIFIED_BY', 'ModifiedBy', 'string', CreoleTypes::VARCHAR, false, 45);
+
+		$tMap->addColumn('DATE_MODIFIED', 'DateModified', 'int', CreoleTypes::TIMESTAMP, false, null);
+
+	} 
+} 

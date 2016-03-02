@@ -1,0 +1,55 @@
+<div id="footer_quality" class="alignCenter">
+
+<h2>MICRONCLEAN QUALITY POLICY</h2>
+<ol>
+<li>Micronclean is <b>committed</b> to total customer satisfaction in micron-contamination services of barrier and accessories. This will be achieved through delivery of services and products that meet customer quality expectations.</li>
+<li>Micronclean ensures quality integrity through diligent <b>continual improvement</b> of process and product quality control measures, and achieves customer satisfaction by being prompt and effective in resolving customers' quality concerns.</li>
+</ol>
+
+
+<h2>MICRONCLEAN QUALITY OBJECTIVES</h2>
+<ol>
+
+<li>2nd Line staff (Operators and Technicians) to be trained to support the Microbiological/Pharma process for garments. </li>
+<li>Initiate and implement Sterilization process capability through further high level training.</li>
+<li>Follow through CSR initiative with Carbon Foot-printing of 2nd Level key processes.</li>
+<li>Implement employee satisfaction index.</li>
+<li>Garment Cleaning: To achieve not more than 3 rejects per customer per quarter. </li>
+<li>Parts Cleaning: To achieve not more than 1 reject per customer per quarter.</li>
+<li>Implement an Environment  Management System by Dec 2013.</li>
+
+<!--
+<li>Key staff to be trained continually to support the Microbiological/Pharma process for garments.</li>
+<li>Initiate and implement Sterilization process capability and Microbiological validation for garments.</li>
+<li>Initiate CSR initiative beginning with Carbon Foot-printing of key processes.</li>
+<li>Expand the HR IS capability to reduce manpower administration resources.</li>
+<li>Garment Cleaning: To achieve not more than 3 rejects per customer per quarter.</li>
+<li>Parts Cleaning: To achieve not more than 1 reject per customer per quarter.</li>
+<li>Implementation of online airborne particle count in the cleanroom as well as CO2 consumption across the Singapore operations.</li>
+-->
+<!--
+<li>Retraining of our employees to improve and add new skills so that there is optimization and creativity in the work flows.</li>
+<li>Lab equipments linearity to be established. Ask Vendor to perform best line fit on our Ion Chromatography.</li>
+<li>Focus on Sterilization and Microbiological validation of our garments.  </li>
+<li>Data Mining and Cost analysis tools to be implemented so that Income vs Expense tracking can be done online and real time. This gives better visibility for Forecast in commercial projects. </li>
+
+<li>Streamline and optimize work and business process through employment of IT tools, e.g. Online inventory system and quality data analysis.</li>
+<li>Continually improve our operation processes, e.g using better grade of detergent for cleaning purpose, supplier performance/capability matrix. </li>
+
+<li>Garment Cleaning: To achieve not more than 3 rejects per customer per quarter. </li>
+<li>Parts Cleaning: To achieve not more than 1 reject per customer per quarter.</li>
+<li>Implementation of online airborne particle count in the cleanroom.</li>
+-->
+</ol>
+
+<p>More at:</p>
+<ul>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/Micronclean-Quality-Manualrev009_20130417_Microncleaclean_Quality_Manual.pdf">Quality Manual</a></li>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/MCS-CIPrev001_20071214_QualityObjective_continual_improvement_plan_2008.pdf">Quality Objective / Continual Improvement Plan (2008)</a></li>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/MCS-CIPrev001_20081212_QualityObjective_continual_improvement_plan_2009.pdf">Quality Objective / Continual Improvement Plan (2009)</a></li>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/MCS-CIPrev001_20091223_QualityObjective_continual_improvement_plan_2010.pdf">Quality Objective / Continual Improvement Plan (2010)</a></li>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/MCS-CIPrev001_20101228_QualityObjective_continual_improvement_plan_2011.pdf">Quality Objective / Continual Improvement Plan (2011)</a></li>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/MCS-CIPrev001_20111220_QualityObjective_continual_improvement_plan_2012.pdf">Quality Objective / Continual Improvement Plan (2012)</a></li>
+<li><a href="<?php echo sfConfig::get('http_intranet') ?>sym/isodoc/qmqp/MCS-CIPrev001_20111220_QualityObjective_continual_improvement_plan_2013.pdf">Quality Objective / Continual Improvement Plan (2013)</a></li>
+</ul>
+</div>

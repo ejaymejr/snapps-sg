@@ -1,0 +1,139 @@
+
+
+    
+#pageHeadingSelect {
+    float:right;
+    margin: 1px 3px 0 0;
+}
+#pageHeadingSelect, #pageHeadingSelect * {
+    font-size:10px;
+    font-weight:normal;
+}
+
+
+
+
+    
+
+
+    
+.div-lookup {
+    opacity: 0.98;
+    filter: alpha(opacity:98);
+    padding:0;
+    z-index:999; 
+    position:absolute; 
+    left:100px; 
+    top:50px; 
+    width:650px; 
+    height:400px; 
+    background-color:#fff;
+    border:25px solid #00FF40;
+    color:#000;
+    overflow:auto;  
+    }
+
+.div-lookup * {
+    font-size:8pt;
+    }
+
+.div-lookup a.close {
+    font-size:10px;
+    font-weight:bold;
+    color:#F00;
+    background-color:#fff;
+    padding:2px;    
+    }
+    
+.lookup-handle {
+    padding:4px 0 0 4px;
+    cursor: move;
+    text-align: left;
+    vertical-align: middle;
+    height: 24px;
+    border: 0px;
+    color:#fff;
+    /*background-image: url(../images/headline-bar-bg-25.jpg);*/
+    background-image: url(../images/bg/handle.jpg);
+    background-repeat: repeat-x;    
+    white-space:no-wrap;
+    text-align:center;
+}
+
+
+
+
+#globalDashboard {   
+    
+    width:700px; 
+    background-color:#fff;
+    
+    color:#000;
+    }
+    
+    
+#globalDashboard * {
+    font-size:10px;
+    }
+#globalDashboardHandle {
+    background-color:#ccc;
+    padding:6px;
+    font-size:12px;
+    margin-top:0;
+    clear:both;
+    
+    background:transparent url(../images/bg/header-3.gif) repeat-x 0 0;
+}
+#globalDashboardHandle a {
+    color:#006;
+    font-size:10px;
+    }
+
+
+
+
+    
+#DIVcontextHelp {   
+    
+    width:300px; 
+    background-color:#fff;
+    
+    color:#000;
+    }
+    
+#DIVcontextHelp * {
+    font-size:8pt;
+    }
+
+    
+#DIVcontextHelp #DIVcontextHelpContent {
+    padding:10px;
+    }
+#DIVcontextHelp #DIVcontextHelpContent ol {
+    margin-left:15px;
+    list-style-position:outside;
+    list-style-type:bullet;
+    }
+#DIVcontextHelp #DIVcontextHelpContent li {
+    margin-bottom:7px;
+    margin-top:3px;
+    margin-left:10px;
+    font-family:Tahoma, Verdana, Arial;
+    }
+    
+    
+#globalDashboard .bd, #DIVcontextHelp .bd  {
+    overflow:auto;
+    background-color:#fff;
+    opacity:100%;
+    padding:0;
+}
+#DIVcontextHelp .bd  {
+    height:400px;
+}
+
+#globalDashboard .ft, #DIVcontextHelp .ft {
+    height:15px;
+    padding:0;
+}
+    

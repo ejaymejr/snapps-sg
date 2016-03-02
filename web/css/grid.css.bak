@@ -1,0 +1,284 @@
+
+
+.dataGridContainer, .dg_c {
+    padding:0px;
+	border:0;
+
+	text-align:center;
+	vertical-align:top;
+}
+
+.dataGridContainer td, .dg_c td {
+    font-size:10px;
+    color:#3D5A76;
+    color:#2F455B;
+    color:#52594A;
+    color:#000000;
+    font-family: Verdana, Arial,  Message-Box;
+}
+
+.defaultGrid td {
+    color:#3D5A76;
+    color:#2F455B;
+    color:#52594A;
+    color:#000000;
+    font:           Message-Box;
+}
+.dataGridContainer form, .dg_c form {
+    margin:0;
+    padding:0;
+}
+
+.dataGridHeader, .dg_h {
+    padding:10px;
+    background-color:#CCCCCC;
+    font-weight: normal;
+    text-align: left;
+    /*
+    background-image: url(../images/simple-gradient-bg.png);
+    background-position:left -50px;
+    */
+    background: url(../images/bg/bg-sprite.jpg) repeat-x 0 -128px;
+    
+
+}
+.dataGridContent, .dg_ct {
+    padding:0px;
+    text-align: left;
+}
+.dataGridContent table td, .dg_ct table td {
+    padding:4px;
+}
+
+.dataGridFooter, .dg_f {
+    padding:10px;
+    background-color:#FFFFFF;
+    text-align: left;
+    /*
+    background-image: url(../images/simple-gradient-bg.png);
+    background-position:left -50px;
+    background-repeat:repeat-x;
+    */
+    background: url(../images/bg/bg-sprite.jpg) repeat-x 0 -128px;
+    
+}
+.dataGridNavigation, .dg_n {
+    padding:5px;
+    background-color:#EFEFEF;
+    
+    /*
+    background-image: url(../images/simple-gradient-bg-2.png);
+    background-position:left -50px;
+    background-repeat:repeat-x;
+    */
+    
+    background: url(../images/bg/bg-sprite.jpg) repeat-x 0 -279px;
+    
+    text-align:left;
+}
+
+.dataGridPagination, .dg_p {
+    float:right;
+    }
+.dataGridTable, .dg_t {
+	text-align:center;
+}
+.dataGridTable td, .dg_t td {
+    text-align:left;
+    vertical-align:top;
+}
+.dataGridTableHeader, .dg_th {
+    font-weight:bold;
+    background-color:#CCCCCC;
+
+    
+    /*
+    background-image: url(../images/simple-gradient-bg.png);
+    background-position:left top;
+    background-repeat:repeat-x;
+    background: url(../images/bg/bg-sprite.jpg) repeat-x 0 -78px;
+    background:transparent url(../images/bg/header-3.gif) repeat-x 0 0;
+    */
+    
+    background:transparent url(../images/bg/dgh2.gif) repeat-x 0 0;
+
+}
+
+.dataGridTableHeaderColumn, .dg_thc {
+
+}
+.dataGridTableHeaderCurrentSorting {
+	color:#009900;
+}
+.dataGridRowOdd, .dg_ro {
+    background-color:#ebeff9;
+    background-color:#f4f6fb;
+
+}
+.dataGridRowEven, .dg_re {
+    background-color:#e2e8f6;
+}
+.dataGridRowOdd2, .dg_ro2 {
+
+}
+.dataGridRowEven2, .dg_re2 {
+}
+
+.dataGridTableSearch, .dgts {
+    background-color:#ddd;  
+	}
+.dataGridTableSearch td, .dgts td {
+    
+}
+.dataGridTableSearch td input, .dataGridTableSearch td select, .dgts td input, .dgts td select {
+	font-size:10px;
+	font-family:verdana, arial;
+	padding:2px;
+	}
+	
+.dataGridTableSearch td input.submit-button, .dgts td input.submit-button {    
+    padding: 0 12px 2px 10px;
+}
+
+
+.dataGridTable ol, .dataGridTable ul  {
+	margin:0;
+	margin-left:15px;
+	padding:0;
+	font-size:80%;
+	list-style-position:outside;
+	}
+.dataGridTable ol li, .dataGridTable ul li {
+    }
+
+
+
+.clicked {
+	background-color:#ECE9B5;
+}
+.unclicked {
+
+}
+.selected {
+	background-color:#ECF9B5;
+}
+
+.hover {
+	background-color:#ECE905;
+    background-color:#EAFBEF;
+    background-color:#BEF7BB;
+	/* cursor:pointer; */
+}
+.unhover {
+
+}
+
+tr.negative td input {
+    background-color:#999999;
+}
+
+.dataGridContainer  ul.packed-list {
+    list-style-type:disc;
+    list-style-position:outside;
+    margin:0;
+    margin-left:10px;
+}
+.dataGridContainer  ul.packed-list li {
+    color:#999;
+    color:#2F455B;
+    color:#52594A;
+}
+
+.LightHeader .dataGridTableHeader, .LightHeader .dg_th {
+    font-weight:normal;
+    font-size:10px;
+}
+
+.dataGridTableHeader span.current-sort {
+	width:15px;
+	height:15px;
+	float:right;
+	padding:0;
+	margin:0;
+	}
+.dataGridTableHeader span.sort-ASC {
+    background: #ddd url(../images/icons/tools-sprites-trans.gif) no-repeat scroll -15px -60px;
+	
+	}
+.dataGridTableHeader span.sort-DESC {
+    background: #ddd url(../images/icons/tools-sprites-trans.gif) no-repeat scroll -15px -75px;
+    
+    }
+    
+.dataGridTableHeader td.current-sort, .dg_th td.current-sort
+{
+    background:transparent url(../images/bg/dgh1.gif) repeat-x 0 0;
+}
+.dataGridTableHeader td.sortable-header:hover, .dg_th td.sortable-header:hover
+{
+	color:#666;
+    cursor:pointer;
+    background:transparent url(../images/bg/dgh1.gif) repeat-x 0 0;
+}
+
+	
+td.colLabel, td.lbl {
+    wrap: off;
+    width:10px;	
+}
+td.colLabel, td.lbl, .lbl, .colLabel, .lbl *, .colLabel * {
+    color:#FF0000;
+    color:#999;
+    color:#930;
+    color:#52594A;
+    color:#3D5A76;
+    color:#2F455B;
+    font-size:7pt;
+}
+td.colLabelNegative, .colLabelNegative {
+    color:#FF0000;
+    font-size:7pt;
+}
+td.colLabelPositive, .colLabelPositive {
+    color:#00FF00;
+    font-size:7pt;
+}
+
+.dataGridContainer cell-for-number, .dg_c .cfn {
+	text-align:right;
+	padding-right:4px;
+}
+.dataGridContainer .alignCenter, .dg_c .ac {
+	text-align:center;
+}
+.dataGridContainer .alignRight, .dg_c .ar {
+    text-align:right;
+}
+
+
+tr.negative td {
+    color:#FF3366;
+}
+tr.negative td.negative {
+    background-color:#FFCC99;
+    color:#f00;
+}
+tr td.negative {
+    background-color:#FFCC99;
+    color:#f00;
+}
+
+
+.grid-toolbar {
+    padding:4px;
+    background-color:#CCCCCC;
+    font-weight: normal;
+    text-align: left;
+    background: url(../images/bg/bg-sprite.jpg) repeat-x 0 -100px;
+}
+.grid-toolbar-2 {
+    padding:4px;
+    background-color:#ddd;
+    font-weight: normal;
+    text-align: left;
+}

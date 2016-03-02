@@ -1,0 +1,173 @@
+<?php
+class PdfLibrary
+{
+    protected $pdf;
+    protected $nxtln;
+    
+    const ml = 15;
+    const mt = 12;
+    const mr = 25;
+    
+    function __construct($paper = 'A4')
+    {
+        $this->pdf = new FPDF('P','mm',$paper);
+        $this->pdf->SetAutoPageBreak(true);
+        $this->pdf->SetMargins(self::ml, self::mt, self::mr);
+        $this->pdf->AliasNbPages();
+        
+    }
+
+    public function addPage($font = 'Arial', $size = 10, $orient = 'P', $linespacing = 2)
+    {
+        $this->nxtln = $size / $linespacing ;
+        $this->pdf->AddPage($orient);
+        $this->pdf->SetXY(01, 01);
+        $this->pdf->SetFont($font,'', $size);
+    }
+
+    public function printLn($x, $y, $mess, $font = null, $fontsize = null)
+    {
+        $this->pdf->SetFont('');
+        if ($font)
+        {
+            $this->pdf->SetFont($font,'',$fontsize);
+        }
+        $this->pdf->SetXY($x + self::ml, (($y*$this->nxtln) + self::mt - 2) );
+        $this->pdf->Cell(1, 1, $mess);
+        //        $pdf->SetXY(01, 01);
+        //        $pdf->SetFont('Arial','',7);
+        //$pdf->Cell(40,0,"Page $pageNumber of $pageTotal", 0, 0, 'R');
+        //        $pdf->Cell(5, 1,"T.C. KHOO & CO. (PTE) LTD.                     PAYSLIP FOR THE MONTH OF JUNE 2008");
+        //        $pdf->Cell(5, 1,"NRIC: 9922         NAME:  EMMANUEL L. JAYME JR.             EMPLOYMENT: SUB-CON");
+    }
+
+    public function printBoldLn($x, $y, $mess, $font = null, $fontsize = null)
+    {
+        if ($font)
+        {
+            $this->pdf->SetFont($font,'B', $fontsize);
+        }
+        $this->pdf->SetXY($x + self::ml, (($y*$this->nxtln) + self::mt - 2));
+        $this->pdf->Cell(1, 1, $mess);
+    }
+
+    public function image($file, $x, $y, $w=null, $h=null)
+    {
+    	$w = ($w)? $w : 207;
+    	$h = ($h)? $h : 300;
+    	$this->pdf->Cell(0, 0, $this->pdf->image($file, $x, $y, $w, $h));
+    }
+
+    public function printHeader()
+    {
+        $this->pdf->SetFont('Arial', 'B', 18);
+        $this->pdf->SetXY(13, 2);
+        $this->pdf->Cell(1, 15, 'MICRONCLEAN SINGAPORE Pte Ltd');
+        $this->pdf->SetFont('Arial', 'I', 12);
+        $this->pdf->SetXY( 30, 14);
+        $this->pdf->Cell(1, 1, 'cleanroom contamination control');
+        $this->pdf->SetFont('Arial', '', 8);
+        $this->pdf->SetXY( 150, 8);
+        $this->pdf->Cell(1, 1, '35 Senoko Way Woodlands East,');
+        $this->pdf->SetXY( 150, 11);
+        $this->pdf->Cell(1, 1, 'Singapore 758751');
+        $this->pdf->SetXY( 150, 14);
+        $this->pdf->Cell(1, 1, 'Tel: 67582119 Fax: 67532978');
+        $this->pdf->SetXY( 150, 17);
+        $this->pdf->Cell(1, 1, 'RCB Reg No: 199602547W');
+        $this->pdf->SetXY( 12 , 19);
+        $this->pdf->Cell(1, 1, '================================================================================');
+        return 19;
+    }
+    
+    public function printTCKhooHeader($y=13)
+    {
+        $this->pdf->SetFont('Arial', 'B', 18);
+        $this->pdf->SetXY($y, 2);
+        $this->pdf->Cell(1, 15, 'T.C. KHOO & CO. (PTE) LTD.');
+//        $this->pdf->SetFont('Arial', 'I', 12);
+//        $this->pdf->SetXY( 30, 14);
+//        $this->pdf->Cell(1, 1, 'cleanroom contamination control');
+        $this->pdf->SetFont('Arial', '', 8);
+        $this->pdf->SetXY( 150, 8);
+        $this->pdf->Cell(1, 1, '35 Senoko Way Woodlands East,');
+        $this->pdf->SetXY( 150, 11);
+        $this->pdf->Cell(1, 1, 'Singapore 758751');
+        $this->pdf->SetXY( 150, 14);
+        $this->pdf->Cell(1, 1, 'Tel: 67582119 Fax: 67532978');
+        $this->pdf->SetXY( 150, 17);
+        $this->pdf->Cell(1, 1, 'RCB Reg No: 199602547W');
+        $this->pdf->SetXY( $y , 19);
+        $this->pdf->Cell(1, 1, '================================================================================');
+        return 19;
+    }
+
+    public function closePDF($fname)
+    {
+        $fname = $fname? $fname : 'testing.pdf';
+        $this->pdf->Output($fname, 'I');
+    }
+
+    public function setFont($font = 'Arial', $size = 10)
+    {
+        $this->pdf->SetFont($font, '', $size);
+    }
+
+    public function GetPageNo()
+    {
+        return $this->pdf->PageNo().'/'.$this->AliasNbPages();
+    }
+
+    function Footer($seq = 'Page ', $info=null)
+    {
+        //Position at 1.5 cm from bottom
+        $this->pdf->SetY(-9);
+        $this->pdf->SetFont('Arial','',6);
+        $this->pdf->Cell(60,0,Date('Y-m-d H:i:s') ,0,0,'L');
+        $this->pdf->SetFont('Arial','',6);
+        $this->pdf->Cell(60,0,$seq. ' '.$this->pdf->PageNo().' / '.'{nb}', 0,0,'C');
+        $this->pdf->SetFont('Arial','I',6);
+        if ($info) $this->pdf->Cell(60,0,$info , 0,0,'R');
+        return;
+    }
+
+    public function Box($x, $y, $w, $h, $style){
+        $this->pdf->setLineWidth(.4);
+        $this->pdf->rect($x+self::ml, $y+self::mt, $w, $h, $style);
+    }
+    
+    public function BoxWithColor($x, $y, $w, $h, $style){
+    	$this->pdf->SetFillColor('220','220','220');
+        $this->pdf->setLineWidth(.4);
+        $this->pdf->rect($x+self::ml, $y+self::mt, $w, $h, $style);
+    }
+
+    public function Line($x, $y, $w, $t=null){
+        $t = $t? $t : .2;
+        $this->pdf->setLineWidth($t);
+        $this->pdf->Line($x+self::ml, (($y*$this->nxtln) + self::mt - 2), $w+self::ml, (($y*$this->nxtln) + self::mt - 2));
+    }    
+
+    public function MultiLinePrint($w, $h, $txt, $bg=null){
+    	$fill = false;
+    	if ($bg):
+    		$fill = true;
+    		$this->pdf->SetFillColor(220,220,220);
+    	endif;
+        $this->setFont();
+        $this->pdf->setLineWidth(.1);
+        $this->pdf->MultiCell($w,$h,$txt, 1, $align='J', true);
+    }
+    
+    public function HeaderLabel($w, $h, $txt){
+        $this->setFont('Arial', 12);
+        $this->pdf->setLineWidth(.2);
+        $this->pdf->MultiCell($w,$h,$txt,1,$align='C');
+    }    
+    
+    public function SetXY($x, $y){
+        $this->pdf->SetXY($x + self::ml, (($y*$this->nxtln) + self::mt - 2));
+    }
+
+}
+?>

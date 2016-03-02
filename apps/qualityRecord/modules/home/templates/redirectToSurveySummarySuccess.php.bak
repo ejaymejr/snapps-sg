@@ -1,0 +1,6 @@
+<?php
+	use_helper('Validation', 'Javascript');
+	echo javascript_tag('
+		http://app.microncleansingapore.com/micronclean/survey/satisfactionIndex/surveySummary", "_blank", "");
+		');
+?>
